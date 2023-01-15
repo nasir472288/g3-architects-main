@@ -31,7 +31,8 @@
 
 
 /* -----------------NAV SECTION DESIGN----------------- */
-.header, .footer{
+.header,
+.footer {
     background-color: var(--color_1);
     width: 100%;
     height: 100vh;
@@ -40,7 +41,7 @@
 .containers {
     background-color: var(--color_2);
     width: 100%;
-    height: 170vh;
+    height: 150vh;
 }
 
 .nav-section {
@@ -112,6 +113,7 @@
     max-width: 80%;
     height: auto;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .feature-list {
@@ -165,6 +167,9 @@
 }
 
 .section-2-contant-title h1 {
+    border-left: 5px solid var(--color_3);
+    padding: 25px;
+    line-height: 2.5rem;
     font-size: 45px;
     font-weight: 700px;
 }
@@ -172,7 +177,7 @@
 .section-2-contant {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .image-section-2 {
@@ -202,6 +207,7 @@
 .fact-sec h1 {
     font-weight: 45px;
     font-weight: 700px;
+    margin-top: 100px;
 }
 
 .fact-sec p {
@@ -210,47 +216,147 @@
 
 }
 
-.achive{
+.achive {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 100px auto;
     align-items: center;
 }
 
-.achive-1{
+.achive-1 {
     border: 2px solid var(--color_3);
     margin: 0 auto;
     padding: 25px;
     text-align: center;
 }
 
-.sponsor{
+.sponsor {
     width: 50%;
     margin: 0 auto;
     text-align: center;
     align-items: center;
 }
 
-.sponsor h1{
+.sponsor h1 {
     font-size: 45px;
     font-weight: 700px;
 }
-.sponsor p{
-   color: var(--color_5);
+
+.sponsor p {
+    color: var(--color_5);
 }
 
-.soposor-logo{
+.soposor-logo {
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
-.copyright{
+.copyright {
     background-color: var(--color_2);
     text-align: center;
     padding: 25px 0;
     color: var(--color_5);
     margin: 100px auto;
+}
+
+
+@media only screen and (max-width: 592px) {
+
+    .header,
+    footer {
+        display: none;
+
+    }
+
+    .nav-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-section ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .containers {
+        height: auto;
+    }
+
+    .contant-title {
+        font-size: 1.5rem;
+        font-weight: 700px;
+        line-height: normal;
+    }
+
+    .feature-list {
+
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .feature-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 5px;
+
+    }
+
+    .image-2-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .feature-section-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .image-section-2 {
+        display: none;
+    }
+
+    .btn-sec {
+        margin-top: 100px;
+        align-items: center;
+    }
+
+
+    .sec-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achive {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .sponsor {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sponsor h1 {
+        font-size: 2rem
+    }
+
+    .soposor-logo {
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
 }
